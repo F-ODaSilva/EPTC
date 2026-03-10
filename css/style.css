@@ -1,0 +1,398 @@
+:root {
+    /* ==================== COOLORS PALETTE ==================== */
+    /* Neutrals & Backgrounds */
+    --soft-linen: #e0e2db;
+    /* Main background - beige/cream */
+    --grey: #787975;
+    /* Secondary elements, borders */
+    --onyx: #0f0f0f;
+    /* Deep black for text, dark elements */
+
+    /* Blue Family - Professional & Trust */
+    --deep-space-blue: #0c2b49;
+    /* Dark navy - headers, professional */
+    --oxford-navy: #003366;
+    /* Navy - secondary headings */
+    --baltic-blue: #185687;
+    /* Lighter blue - accents, links */
+
+    /* Orange Family - Energy & CTA */
+    --blaze-orange: #f85709;
+    /* PRIMARY - Main CTA, brand color */
+    --pumpkin-spice: #f96908;
+    /* Secondary orange - hover states */
+
+    /* ==================== ADDITIONAL BRAND COLORS ==================== */
+    --primary-orange: #f85709;
+    --secondary-orange: #f88109;
+    --tertiary-orange: #fb750f;
+    --accent-red: #f64e26;
+    --vibrant-pink: #f80957;
+
+    /* Safety Equipment Colors */
+    --safety-orange: #ff6b35;
+    --safety-red: #e63946;
+    --navy-uniform: #1d3557;
+    --reflective-silver: #cfd8dc;
+
+    /* ==================== SEMANTIC COLOR MAPPING ==================== */
+    --bg-beige: var(--soft-linen);
+    --bg-white: #ffffff;
+    --text-dark: #2d3436;
+    --text-gray: #5a5a6e;
+    --text-light: #ffffff;
+
+    /* ==================== GRADIENTS (YOUR EXACT SPECIFICATIONS) ==================== */
+    /* Hero background gradient (behind image column) */
+    --hero-bg-gradient: linear-gradient(160deg,
+            #fb750f 13%,
+            #f64e26 50%,
+            #f80957e8 100%);
+
+    /* Hero overlay gradient (on top of image) */
+    --hero-overlay-gradient: linear-gradient(176deg,
+            rgba(248, 87, 9, 0.41),
+            rgba(248, 129, 9, 0));
+
+    /* Navbar background when scrolled */
+    --navbar-white-bg: rgba(255, 255, 255, 0.98);
+
+    /* ==================== SHADOWS & EFFECTS ==================== */
+    --shadow-sm: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 30px rgba(248, 87, 9, 0.4);
+    --shadow-lg: 0 15px 40px rgba(248, 87, 9, 0.4);
+
+    /* ==================== SPACING SYSTEM ==================== */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+
+    /* ==================== TRANSITIONS ==================== */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.4s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--bg-beige);
+    overflow-x: hidden;
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent !important;
+    font-size: 15px;
+    transition: all var(--transition-smooth);
+}
+
+nav.navbar.scrolled {
+    background-color: var(--navbar-white-bg) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 12px;
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--text-light) !important;
+    transition: color var(--transition-normal);
+}
+
+nav.navbar.scrolled .navbar-brand {
+    color: var(--text-dark) !important;
+}
+
+.nav-link {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--text-light) !important;
+    position: relative;
+    transition:
+        transform var(--transition-slow),
+        font-size var(--transition-normal);
+}
+.navbar-nav {
+    margin-left: 6rem !important;
+}
+
+nav.navbar.scrolled .nav-link {
+    color: var(--text-dark) !important;
+}
+
+.nav-link:hover {
+    font-size: 16px;
+    transform: scale(1.1);
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: 700;
+}
+
+/* Underline bar animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 7px;
+    width: 60%;
+    height: 2.8px;
+    border-radius: 10px;
+    background-color: var(--primary-orange);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease;
+}
+
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.btn-cta {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    background-color: var(--secondary-orange) !important;
+    border-radius: 30px;
+    border: none;
+    color: var(--text-light) !important;
+    transition: all var(--transition-normal);
+    justify-self: end;
+    margin-left: 10rem !important;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background-color: var(--primary-orange) !important;
+}
+
+.navbar-toggler {
+    border: 2px solid var(--text-light);
+}
+
+nav.navbar.scrolled .navbar-toggler {
+    border-color: var(--text-dark);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+nav.navbar.scrolled .navbar-toggler-icon {
+    filter: invert(0);
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    min-height: 100vh;
+    background: var(--bg-beige);
+}
+
+/* ==================== IMAGE COLUMN (LEFT - FULL HEIGHT) ==================== */
+.image-column {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Gradient Background Behind Image */
+.gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: var(--hero-bg-gradient);
+    z-index: 1;
+}
+
+/* Image Container */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Hero Image with Custom Clip-Path */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Your exact clip-path specification */
+    clip-path: polygon(290px -15px,
+            100% -10px,
+            100% 87%,
+            57% 87%,
+            20% 109%,
+            -8% 35%);
+}
+
+/* Gradient Overlay on Top of Image */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hero-overlay-gradient);
+    z-index: 3;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+/* ==================== CONTENT COLUMN (RIGHT) ==================== */
+.content-column {
+    background: transparent;
+    position: relative;
+    z-index: 4;
+}
+
+.hero-content {
+    animation: fadeInUp 2s ease-out 0.3s backwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    color: var(--text-dark);
+    letter-spacing: 0.5px;
+}
+
+.hero-title .highlight {
+    color: var(--primary-orange);
+}
+
+.hero-description {
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.8;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+/* Hero Buttons */
+.btn-hero-primary {
+    background-color: var(--primary-orange);
+    color: var(--text-light);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0.5px;
+    transition: all var(--transition-normal);
+    border: none !important;
+}
+
+.btn-hero-primary:hover {
+    background: var(--primary-orange);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    color: var(--text-light);
+}
+
+.btn-hero-secondary {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: solid 2px var(--primary-orange) !important;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0.5px;
+    transition: all var(--transition-normal);
+}
+
+.btn-hero-secondary:hover {
+    background-color: var(--primary-orange);
+    color: var(--text-light);
+    transform: translateY(-3px);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 992px) {
+    .image-column {
+        min-height: 60vh;
+    }
+
+    .hero-image {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .navbar-collapse {
+        background: var(--navbar-white-bg);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse .nav-link {
+        color: var(--text-dark) !important;
+    }
+
+    .content-column {
+        padding-top: 4rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-column {
+        min-height: 50vh;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+    }
+
+    .navbar-brand {
+        letter-spacing: 6px;
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+    }
+}
