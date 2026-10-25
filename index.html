@@ -1,282 +1,302 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- WEBSITE FAVICO LINK -->
-    <!-- Favicon (standard browsers) -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/favicon_io/favicon_io/favicon.ico"
-    />
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EPTC · Elton Professional Training Centre</title>
+  <meta name="description" content="Cursos profissionais em Maputo e Matola: eletricidade, informática, secretariado, gestão e marketing, design, línguas e preparação para exames de admissão. Certificado e estágio profissional.">
+  <meta name="theme-color" content="#0c2b49">
+  <link rel="icon" href="assets/img/eptc-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/eptc.css">
+</head>
+<body>
 
-    <!-- PNG Favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon_io/favicon_io/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon_io/favicon_io/favicon-32x32.png"
-    />
+<a class="skip" href="#main">Saltar para o conteúdo</a>
 
-    <!-- Android / Chrome -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/android-chrome-512x512.png"
-    />
-
-    <!-- Apple devices -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-
-    <!-- Theme color (optional but nice for mobile browsers) -->
-    <meta name="theme-color" content="#ffffff" />
-
-    <!-- FONT AWESOME CDN LINK -->
-    <script
-      src="https://kit.fontawesome.com/f7ccd0c567.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- GOOGLE FONTS CDN LINK -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- BOOTSTRAP 5 CDN LINK -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-
-    <!-- DATA AOS CDN LINK -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- STYLESHEET LINK -->
-    <link rel="stylesheet" href="css/style.css" />
-  
-
-    <title>Elton Professional Training Center</title>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg py-3" id="mainNavbar">
-      <div class="container-fluid px-lg-5">
-        <a class="navbar-brand" href="#">EPTC</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link mx-2 active" aria-current="page" href="#">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#about">Sobre nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#courses">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#local">Polos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#testimonials">Testemunhos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#contact">Contacto</a>
-            </li>
-          </ul>
-          <button class="btn btn-cta rounded-pill px-4 ms-3" type="button">
-            Inscreva-se Agora!
-          </button>
-        </div>
-      </div>
+<header class="nav" id="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="EPTC, início">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#eptc-mark"/></svg>
+      <span class="brand-words"><b>EPTC</b><small>Elton Professional Training Centre</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="links">
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#polos">Polos</a></li>
+        <li><a href="#porque">Porquê nós</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
+    <a class="btn btn-orange nav-cta" href="#inscricao">Inscreva-se agora</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="sheet" aria-label="Abrir menu"><span></span><span></span></button>
+  </div>
+  <div class="sheet" id="sheet" hidden>
+    <a href="#sobre">Sobre nós</a><a href="#cursos">Cursos</a><a href="#polos">Polos</a><a href="#porque">Porquê nós</a><a href="#contacto">Contacto</a>
+    <a class="btn btn-orange" href="#inscricao">Inscreva-se agora</a>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container-fluid p-0">
-        <div class="row g-0 min-vh-100">
-          <!-- Image Column (Left - Full Height) -->
-          <div class="col-lg-8 image-column">
-            <!-- Gradient Background Behind Image -->
-            <div class="gradient-background"></div>
+<main id="main">
 
-            <!-- Image with Overlay -->
-            <div class="image-wrapper">
-              <img
-                src="assets/tecnicalstudentspractice3.jpg"
-                alt="Estudantes Técnicos em Prática"
-                class="hero-image"
-              />
-              <!-- Gradient Overlay (Top-Left to Bottom-Right) -->
-              <div class="image-overlay"></div>
-            </div>
-          </div>
+  <!-- HERO — same composition as the EPTC draft: photo column with the orange wedge, copy on white -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <div class="hero-grad" aria-hidden="true"></div>
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/img/tecnicalstudentspractice3-sm.webp">
+        <img src="assets/img/tecnicalstudentspractice3.webp" alt="Formandas de capacete e farda laranja a ligar um quadro elétrico na oficina" width="1600" height="1068" fetchpriority="high">
+      </picture>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="tape" aria-hidden="true"><i></i><i></i></div>
+      <p class="hero-badge"><span class="pulse" aria-hidden="true"></span>Inscrições abertas · últimas turmas de 2026</p>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Maputo · Matola · 5 polos</p>
+      <h1>Transforme o seu <em>futuro</em> com educação de qualidade</h1>
+      <p class="lede">Cursos profissionais de 3 a 6 meses, em turmas de manhã, tarde e noite. Sai com certificado, estágio profissional e preparação para entrar no mercado de emprego.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="#inscricao">Começar agora <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-line" href="#cursos">Ver cursos e preços</a>
+      </div>
+      <ul class="hero-proof" aria-label="Incluído em todos os cursos">
+        <li><svg aria-hidden="true"><use href="#i-scroll"/></svg>Certificado</li>
+        <li><svg aria-hidden="true"><use href="#i-tie"/></svg>Estágio profissional</li>
+        <li><svg aria-hidden="true"><use href="#i-mic"/></svg>Seminários de emprego</li>
+      </ul>
+    </div>
+  </section>
 
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Eletricidade</span><span>Informática</span><span>Secretariado</span><span>Gestão e Marketing</span><span>Design e Gráfico</span><span>Línguas</span><span>Comunicação</span><span>Exames de Admissão</span>
+      <span>Eletricidade</span><span>Informática</span><span>Secretariado</span><span>Gestão e Marketing</span><span>Design e Gráfico</span><span>Línguas</span><span>Comunicação</span><span>Exames de Admissão</span>
+    </div>
+  </div>
 
-          <!-- Content Column (Right) -->
-          <div class="col-lg-4 content-column d-flex align-items-center px-4 px-lg-5 py-5">
-            <div class="hero-content w-100">
-              <h1 class="hero-title mb-3">
-                Transforme o Seu <span class="highlight">Futuro</span> com
-                Educação de Qualidade
-              </h1>
-              <p class="hero-description mb-4">
-                Descubra uma nova forma de aprender. Nossos cursos são
-                desenvolvidos com os melhores profissionais do mercado,
-                oferecendo uma experiência educacional completa e inovadora que
-                prepara você para os desafios do futuro.
-              </p>
-
-              <!-- Action Buttons -->
-              <div class="row g-2">
-                <div class="col-6">
-                  <button type="button" class="btn btn-hero-primary w-100 py-2">
-                    Começar Agora
-                  </button>
-                </div>
-                <div class="col-6">
-                  <button type="button" class="btn btn-hero-secondary w-100 py-2">
-                    Saiba Mais
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- ABOUT -->
+  <section class="band about" id="sobre" aria-labelledby="sobre-t">
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Sobre nós</p>
+        <h2 id="sobre-t">O impacto do Elton <em>Professional</em> Training Centre</h2>
+        <p>O Elton Professional Training Centre é uma instituição dedicada à formação profissional e ao desenvolvimento de competências práticas para jovens e adultos que desejam crescer académica e profissionalmente.</p>
+        <p>Com cinco polos em Maputo e na Matola, oferecemos programas acessíveis, orientados para o mercado de trabalho e ministrados por formadores experientes, para o emprego e para o autoemprego.</p>
+        <div class="mv">
+          <article><span class="mv-k">Missão</span><p>Formar profissionais competentes, preparados para enfrentar os desafios do mercado moderno.</p></article>
+          <article><span class="mv-k">Visão</span><p>Ser uma referência nacional em formação profissional de qualidade.</p></article>
         </div>
       </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="container-fluid mx-4">
-        <div class="row row-cols-lg-2 row-cols-sm-1 g-3">
-          <!-- Column Content (Left) -->
-          <div class="col col-lg-5">
-            <div class="row heading">
-              <h5 class="title" data-aos="fade-left" data-aos-duration="2000">Sobre Nós</h5>
-              <h2 class="subtitle" data-aos="fade-left" data-aos-duration="2000">Sobre o Elton <span class="highlight">Professional</span> Training Center</h2>
-            </div>
-            <div class="description" data-aos="fade-up" data-aos-duration="2000">
-              <p class="text mb-2">
-                O Elton Professional Training Centre é uma instituição dedicada à formação profissional e ao desenvolvimento de competências práticas para jovens e adultos que desejam crescer académica e profissionalmente.
-              </p>
-              <p class="text mb-3">
-                Com vários polos estrategicamente localizados, oferecemos programas acessíveis, orientados para o mercado de trabalho e ministrados por formadores experientes. A nossa missão é capacitar estudantes com conhecimento aplicado, promovendo empregabilidade, empreendedorismo e crescimento pessoal.
-              </p>
-            </div>
-            <!-- MISSSION & VISION -->
-            <div class="row ms-1 mb-3" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-6">
-                  <h4 class="subtitle">Missão</h4>
-                  <p class="description">
-                    Formar profissionais competentes, preparados para enfrentar os desafios do mercado moderno.
-                  </p>
-                </div>
-                <div class="col-6 mb-3">
-                  <h4 class="subtitle">Vissão</h4>
-                  <p class="description">
-                    Ser uma referência nacional em formação profissional de qualidade.
-                  </p>
-                </div>
-                <div class="col-3 mt-3 mx-0 px-0">
-                  <button type="button" class="btn btn-hero-secondary w-100 py-1">
-                    Saiba Mais
-                  </button>
-                </div>
-            </div>
-            <!-- <ul class="list-group">
-              <li class="list-group-item">
-                <i class="fa-solid fa-scroll me-3"></i> Cetificado
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-user-tie me-3"></i> Estagio
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-user-graduate me-3"></i> Graduação
-              </li>
-            </ul> -->
-          </div>
-
-          <!-- Image Column (Right) -->
-          <div class="col col-lg-7">
-            <img src="assets/itstudentclassall.jpg" class="img-fluid mt-4" alt="Students inside class with computers" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing=ease-out" data-aos-delay="300">
-          </div>
+      <div class="about-media reveal">
+        <figure class="about-photo">
+          <img src="assets/img/itstudentclassallfocused.webp" alt="Formandas na sala de informática, de polo laranja da EPTC" loading="lazy" width="1600" height="1068">
+          <figcaption class="float-card navy"><b>3</b> turnos<span>Manhã, tarde e noite</span></figcaption>
+        </figure>
+        <div class="about-cards">
+          <article><svg aria-hidden="true"><use href="#i-scroll"/></svg><h3>Certificado</h3><p>Em todos os cursos, no fim da formação.</p></article>
+          <article><svg aria-hidden="true"><use href="#i-tie"/></svg><h3>Estágio profissional</h3><p>A prática continua fora da sala.</p></article>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- COURSES -->
+  <section class="band courses" id="cursos" aria-labelledby="cursos-t">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">Cursos</p>
+        <h2 id="cursos-t">As nossas áreas de formação</h2>
+        <p class="lede">Inscrição de <b>500 MT</b> em todos os cursos. Depois paga a mensalidade do curso que escolher.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Áreas" id="courseTabs">
+        <button role="tab" aria-selected="true" data-f="all">Todos</button>
+        <button role="tab" aria-selected="false" data-f="tec">Eletricidade</button>
+        <button role="tab" aria-selected="false" data-f="esc">Escritório e digital</button>
+        <button role="tab" aria-selected="false" data-f="lin">Línguas e comunicação</button>
+        <button role="tab" aria-selected="false" data-f="exa">Exames de admissão</button>
+      </div>
+      <div class="course-grid" id="courseGrid" aria-live="polite"></div>
+      <p class="fine center">Preços da tabela publicada em outubro de 2026. Confirme no polo ao fazer a inscrição.</p>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- WHY US (navy) -->
+  <section class="band why" id="porque" aria-labelledby="porque-t">
+    <div class="wrap why-grid">
+      <div>
+        <p class="eyebrow light">Diferenciais</p>
+        <h2 id="porque-t">Porquê escolher a EPTC?</h2>
+        <ul class="why-list">
+          <li class="reveal"><span class="wl-ic"><svg aria-hidden="true"><use href="#i-scroll"/></svg></span><div><h3>Certificado no fim do curso</h3><p>Um documento que mostra o que aprendeu quando for procurar trabalho.</p></div></li>
+          <li class="reveal"><span class="wl-ic"><svg aria-hidden="true"><use href="#i-tie"/></svg></span><div><h3>Estágio profissional</h3><p>Aplica o que aprendeu num ambiente de trabalho real.</p></div></li>
+          <li class="reveal"><span class="wl-ic"><svg aria-hidden="true"><use href="#i-mic"/></svg></span><div><h3>Seminários para o mercado de emprego</h3><p>Como preparar o currículo, apresentar-se numa entrevista e começar o próprio negócio.</p></div></li>
+          <li class="reveal"><span class="wl-ic"><svg aria-hidden="true"><use href="#i-clock"/></svg></span><div><h3>Horário que cabe na sua vida</h3><p>Turmas de manhã, tarde e noite em cinco polos.</p></div></li>
+        </ul>
+      </div>
+      <div class="why-photos reveal" aria-hidden="true">
+        <img class="wp-a" src="assets/img/itstudentclassteacher-sm.webp" alt="" loading="lazy" width="800" height="534">
+        <img class="wp-b" src="assets/img/tecnicalstudentspractice-sm.webp" alt="" loading="lazy" width="800" height="534">
+        <div class="tape light"><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Custom JavaScript -->
-    <script>
-      // Navbar scroll effect
-      const navbar = document.getElementById("mainNavbar");
+  <!-- STORY SCROLL -->
+  <section class="journey" id="percurso" aria-labelledby="perc-t">
+    <div class="journey-stage">
+      <div class="journey-photos" aria-hidden="true">
+        <img src="assets/img/studentsclass.webp" alt="" class="on" width="1600" height="1068">
+        <img src="assets/img/tecnicalstudentspractice2.webp" alt="" width="1600" height="1068" loading="lazy">
+        <img src="assets/img/tecnicalstudentslook.webp" alt="" width="1600" height="1068" loading="lazy">
+        <img src="assets/img/graduation.webp" alt="" width="1600" height="1068" loading="lazy">
+      </div>
+      <div class="journey-shade" aria-hidden="true"></div>
+      <div class="wrap journey-grid">
+        <div class="journey-head">
+          <p class="eyebrow light">O percurso</p>
+          <h2 id="perc-t">Da sala à oficina, da oficina ao emprego</h2>
+          <ol class="journey-rail" aria-hidden="true"><li class="on"></li><li></li><li></li><li></li></ol>
+        </div>
+        <ol class="journey-steps">
+          <li class="on"><span class="js-n">01</span><h3>Sala</h3><p>Teoria com o formador, com espaço para perguntar.</p></li>
+          <li><span class="js-n">02</span><h3>Oficina</h3><p>Capacete, luvas e farda. Monta, testa e repete na bancada.</p></li>
+          <li><span class="js-n">03</span><h3>Estágio</h3><p>O que aprendeu, aplicado num local de trabalho.</p></li>
+          <li><span class="js-n">04</span><h3>Graduação</h3><p>Certificado na mão e a família na plateia.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
+  <!-- POLOS -->
+  <section class="band polos" id="polos" aria-labelledby="polos-t">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">Polos</p>
+        <h2 id="polos-t">Estamos perto de si</h2>
+        <p class="lede">Cinco centros em Maputo e na Matola. Escolha o mais perto de casa ou do trabalho.</p>
+      </div>
+      <ul class="polo-grid" id="poloGrid"></ul>
+      <figure class="polo-photo reveal"><img src="assets/img/studentsoutsidecenter.webp" alt="Formandos em frente a um dos centros da EPTC" loading="lazy" width="1600" height="1015"></figure>
+    </div>
+  </section>
 
-      // Smooth scroll for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-    </script>
+  <!-- GALLERY -->
+  <section class="band gallery" aria-labelledby="gal-t">
+    <div class="wrap">
+      <div class="head reveal">
+        <div><p class="eyebrow">No centro</p><h2 id="gal-t">Um dia na EPTC</h2></div>
+        <p class="social"><a class="btn btn-line dark small" id="igLink" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a><a class="btn btn-line dark small" id="fbLink" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a></p>
+      </div>
+      <div class="g-grid" id="gGrid"></div>
+    </div>
+  </section>
 
-    <!-- BOOTSTRAP 5 SCRIPT -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <!-- AOS SCRIPT -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- VANILLA TILT.JS Script -->
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-  </body>
+  <!-- ENROL -->
+  <section class="band enrol" id="inscricao" aria-labelledby="ins-t">
+    <div class="wrap"><div class="enrol-box">
+      <div class="enrol-form">
+        <p class="eyebrow">Inscrição</p>
+        <h2 id="ins-t">Pronto para começar? Inscreva-se agora</h2>
+        <p class="lede">Deixe os seus dados e a equipa liga para confirmar o curso, o polo e o turno.</p>
+        <form id="enrolForm" novalidate>
+          <div class="f-row">
+            <div class="field"><label for="fName">Nome completo</label><input id="fName" autocomplete="name"><span class="err"></span></div>
+            <div class="field"><label for="fPhone">Telefone ou WhatsApp</label><input id="fPhone" type="tel" autocomplete="tel" placeholder="84 000 0000"><span class="err"></span></div>
+          </div>
+          <div class="f-row">
+            <div class="field"><label for="fCourse">Curso</label><select id="fCourse"><option value="">Escolha um curso</option></select><span class="err"></span></div>
+            <div class="field"><label for="fPolo">Polo</label><select id="fPolo"><option value="">Escolha um polo</option></select><span class="err"></span></div>
+          </div>
+          <fieldset class="field"><legend>Turno</legend>
+            <div class="seg">
+              <label><input type="radio" name="turno" value="Manhã" checked><span>Manhã</span></label>
+              <label><input type="radio" name="turno" value="Tarde"><span>Tarde</span></label>
+              <label><input type="radio" name="turno" value="Noite"><span>Noite</span></label>
+            </div>
+          </fieldset>
+          <button class="btn btn-orange block" type="submit">Enviar inscrição</button>
+          <p class="fine">Usamos os seus dados só para tratar a inscrição.</p>
+        </form>
+        <div class="done" id="enrolDone" hidden>
+          <div class="done-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+          <h3>Pedido de inscrição enviado</h3>
+          <p id="doneText"></p>
+          <div class="row"><a class="btn btn-orange" id="doneWa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Confirmar no WhatsApp</a><button class="btn btn-line dark" id="again" type="button">Nova inscrição</button></div>
+        </div>
+      </div>
+      <aside class="enrol-side" aria-label="Atendimento">
+        <img src="assets/img/tecnicalstudentspractice-sm.webp" alt="" loading="lazy" width="800" height="534">
+        <div class="es-body">
+          <h3>Atendimento imediato</h3>
+          <p>Prefere falar com alguém? Ligue ou mande mensagem.</p>
+          <div class="es-actions" id="sideActions"></div>
+          <div class="req">
+            <h4>Para a inscrição traga</h4>
+            <ul><li>Cópia do B.I.</li><li>500 MT de inscrição</li><li>O valor da 1.ª mensalidade</li></ul>
+          </div>
+        </div>
+      </aside>
+    </div></div>
+  </section>
+</main>
+
+<footer class="footer" id="contacto">
+  <div class="tape" aria-hidden="true"><i></i><i></i></div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand light" href="#top"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#eptc-mark"/></svg><span class="brand-words"><b>EPTC</b><small>Elton Professional Training Centre</small></span></a>
+      <p>Formação profissional para o emprego e o autoemprego.</p>
+      <p class="social" id="footSocial"></p>
+    </div>
+    <div><h3>Contacto</h3><ul class="contact" id="contactList"></ul></div>
+    <div><h3>Polos</h3><ul id="footPolos"></ul></div>
+  </div>
+  <div class="wrap foot-base"><span>© 2026 Elton Professional Training Centre</span><span>Maputo, Moçambique</span></div>
+</footer>
+
+<a class="wa" id="waBtn" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Fotografia">
+  <button class="lb-close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  <img id="lbImg" alt="">
+</dialog>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="eptc-mark" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="31" fill="#0c2b49"/>
+    <circle cx="32" cy="32" r="26.5" fill="none" stroke="#f85709" stroke-width="1.6"/>
+    <path d="M32 13.5 47.5 20 32 26.5 16.5 20Z" fill="#f85709"/>
+    <path d="M23.5 23v4.6c0 2.3 3.8 4.1 8.5 4.1s8.5-1.8 8.5-4.1V23L32 26.6Z" fill="#f85709"/>
+    <path d="M45.6 21v7.2" stroke="#f85709" stroke-width="1.6" stroke-linecap="round"/><circle cx="45.6" cy="29.6" r="1.7" fill="#f85709"/>
+    <path d="M14.5 36.5c6-2.2 11.9-1.7 17.5 1.8 5.6-3.5 11.5-4 17.5-1.8v13c-6-2.2-11.9-1.7-17.5 1.8-5.6-3.5-11.5-4-17.5-1.8Z" fill="#fff"/>
+    <path d="M32 38.3v13" stroke="#0c2b49" stroke-width="1.4"/>
+  </symbol>
+  <symbol id="i-scroll" viewBox="0 0 24 24"><path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v12M12 10h3M12 14h3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tie" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M4.5 21c.6-4.4 3.5-7 7.5-7s6.9 2.6 7.5 7M12 14l-1.2 2.4L12 21l1.2-4.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5 5 13.5h6l-1 8 8-11h-6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pc" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8.5 20h7M12 16v4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="m4 20 1-4.5L15.5 5a2.1 2.1 0 0 1 3 3L8 18.5Z M13.5 7l3 3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3.5 7a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.2-3.5-8.5S9.6 5.9 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-5 4Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M3.5 5.5c3-1 6-.8 8.5 1 2.5-1.8 5.5-2 8.5-1v13c-3-1-6-.8-8.5 1-2.5-1.8-5.5-2-8.5-1ZM12 6.5v13" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.7 8.7 0 0 0-7.5 13.1L3.3 20.8l4.6-1.2A8.7 8.7 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.3c.3-.6.6-.6.9-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c.6 1.1 1.5 2 2.6 2.6l.6-.5c.2-.2.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.6c0 .3 0 .6-.6.9-.6.3-1.6.5-3.2-.3a9 9 0 0 1-3.9-3.9c-.8-1.6-.6-2.6-.3-3.2Z" fill="currentColor"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5h2.5V5H14a4 4 0 0 0-4 4v2H7.5v3.5H10V21h3.5v-6.5H16l.5-3.5h-3V9.5c0-.6.4-1 1-1Z" fill="currentColor"/></symbol>
+</svg>
+
+<script src="js/eptc.js"></script>
+</body>
 </html>
